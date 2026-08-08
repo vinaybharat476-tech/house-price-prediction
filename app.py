@@ -53,34 +53,34 @@ with col1:
 with col2:
     st.subheader("🏘️ House Features")
     total_rooms = st.slider(
-        "Total Rooms",
+        "Total Rooms in area",
         10, 40000, 2000,
-        help="Total rooms in house"
+        help="Total number of rooms in the census block group"
     )
     total_bedrooms = st.slider(
-        "Total Bedrooms",
+        "Total Bedrooms in area",
         1, 1000, 3,
-        help="Number of bedrooms"
+        help="Total number of bedrooms in the census block group"
     )
     population = st.slider(
         "Population in Area",
         10, 35000, 1500,
-        help="People living in census block"
+        help="Number of people living in the census block group"
     )
 
 col3, col4 = st.columns(2)
 with col3:
     households = st.slider(
-        "Households",
+        "Households in the area",
         1, 6000, 500,
-        help="Number of households"
+        help="Number of households in the census block group"
     )
 
 with col4:
     median_income = st.slider(
         "Median Income (×$10K)",
         0.5, 15.0, 3.0,
-        help="Median household income (in $10,000 units)"
+        help="Median household income in the area, measured in $10,000s"
     )
 
 # ============== PREPARE INPUT ==============
